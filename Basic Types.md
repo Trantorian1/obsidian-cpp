@@ -52,3 +52,5 @@ As much as possible, fixed-length integers should be used above variable length 
 | ------ | ----- | ------------- |
 | `char` | 1     | -2^8 to 2^8-1 |
 | `bool` | 1     | 0 or 1        | 
+
+*related* [[Operator priority]]
