@@ -15,6 +15,7 @@
 | `long`      | ~4    | -2^31 to 2^31-1 |
 | `long long` | ~8    | -2^64 to 2^64-1 | 
 
+---
 ## Fixed length integers
 
 > ⚠️ Using fixed-length integers requires you to include the `<cstdint>` header.
@@ -36,6 +37,7 @@ As much as possible, fixed-length integers should be used above variable length 
 | `int64_t`    | 8     | -2^64 to 2^64-1 |
 | `uint64_t`   | 8     | 0 to 2^128-1    | 
 
+---
 ## Floating point types
 
 *These are types used to represent decimal numbers. `float` are faster with greater loss of precision, while `double` is slightly slower.*
@@ -48,6 +50,7 @@ As much as possible, fixed-length integers should be used above variable length 
 | `double`      | 8     | -1.7E308 to 1.7E308  |
 | `long double` | 8     | -3.4E932 to 1.7E4832 |
 
+---
 ## Other basic types
 
 > Note that `bool` as a memory type is particularly **not** memory-dense, and on systems  with limited memory or a high number of possibilities to encode, it is highly preferable to use fixed-length integers along with bitwise operations to encode state.
