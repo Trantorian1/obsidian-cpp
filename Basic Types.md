@@ -61,4 +61,4 @@ As much as possible, fixed-length integers should be used above variable length 
 | `bool` | 1     | 0 or 1        | 
 
 ---
-*related* [[Operator priority]]
+*related* [[Numerical Notations]] [[Operator priority]]
