@@ -1,21 +1,9 @@
-#include <cstddef>
-#include <cstdlib>
-#include <iterator>
 #include <iostream>
-
-void	put(int array[]) {}
 
 int main (int argc, char *argv[])
 {
-	int	array[] = { 1, 2, 3, 4, 5 };
+	std::string fullName = "Trantorian 1";
+	std::string firstName = fullName.substr(0, 10);
 
-	for (size_t i = 0; i < sizeof(array) / sizeof(array[0]); i++)
-		std::cout << array[i] << std::endl;
-
-	int	matrix[2][3] = {
-		{ 1, 2, 3},
-		{ 4, 5, 6}
-	};
-
-	return EXIT_SUCCESS;
+	std::cout << '\'' << firstName << '\'' << std::endl;
 }
