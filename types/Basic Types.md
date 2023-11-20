@@ -1,7 +1,6 @@
 ---
 
 ---
----
 ## Variable length integers
 
 *These are types whose length in bytes has a defined minimum but can be platform dependent.*
@@ -59,6 +58,17 @@ As much as possible, fixed-length integers should be used above variable length 
 | ------ | ----- | ------------- |
 | `char` | 1     | -2^8 to 2^8-1 |
 | `bool` | 1     | 0 or 1        | 
+
+---
+## Value Ranges
+
+Contrarily to C, type value ranges are not gotten through defines like `INT_MAX`. Instead, you should use the `numeric_limits` template.
+
+*ex:*
+```cpp
+numeric_limits<int>::min() // INT_MIN
+numeric_limits<int>::max() // INT_MAX
+```
 
 ---
 *related* [[Numerical Notations]] [[Operator priority]]
