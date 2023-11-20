@@ -66,3 +66,6 @@ do {
 } while (condition);
 ```
 
+---
+*related* [[Conditions]]
+

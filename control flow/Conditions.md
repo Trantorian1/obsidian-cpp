@@ -61,3 +61,6 @@ switch (n) {
 		break;
 }
 ```
+
+---
+*related* [[Loops]]
