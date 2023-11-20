@@ -24,6 +24,23 @@ void    greet(std::string name, std::string greeter = "Hello") {
 ```
 
 ---
+## Arrays as parameters
+
+Arrays as function parameters introduce extra complexity. When passed as an argument, an array is automatically cast to a pointer and looses any size information it might have, even using `C++17` `std::size`.
+
+> ⚠️ Unless the array itself contains information about it's size, as is the case with a null-terminated string, you should always pass the size of the array as a function parameter to be able to iterate over it.
+
+*ex:*
+```cpp
+void    put(int array[], size_t len) {
+	for (size_t i = 0; i < len; i++)
+		std::cout << array[i] << std::endl
+}
+```
+
+> ⚠️ Always pass a size of type `size_t` as it is contractually guaranteed to be the largest possible type on the platform being used, thus insuring your index will fit, regardless of it's size. If you **for certain** know the range of your index lands within the bounds of a smaller type, you might use that instead. In general though, make sure your index type doesn't cause an overflow and **always use unsigned values**.
+
+---
 ## Function Overloading
 
 C++ function overloading allows one function to have multiple definitions, each with different arguments.
