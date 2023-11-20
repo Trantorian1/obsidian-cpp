@@ -13,3 +13,5 @@ This repository is mainly intended as a C++ tutorial with a fast takeoff for pro
 - Control flow: [[About Control Flow]]
 - Code structure: [[About Code Structure]]
 - Streams: [[About Streams]]
+- Classes: [[About Classes]]
+- Containers: [[About Containers]]
