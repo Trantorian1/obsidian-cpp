@@ -1,1 +1,1 @@
-> This is a repository intended for the study of the C++ programming language, with a focus on version C++99. As a result, some information might be out of date or considered as bad practices as compared to never version. Use at your own risk.
+> This is a repository intended for the study of the C++ programming language, with a focus on version [C++98](https://cplusplus.com/doc/oldtutorial/). As a result, some information might be out of date or considered as bad practices as compared to never version. Use at your own risk.
