@@ -1,2 +1,9 @@
+
+> 📚 **Types** define the kind of data to hold inside of your variables.
+
 ---
-🚧 **This section is under construction** 🚧 
+## Sections
+
+- `int`, `char`, `bool`... : [[Basic Types]]
+- Hexadecimal and other notations: [[Numerical Notations]]
+- Operators in C++: [[Operator priority]]
