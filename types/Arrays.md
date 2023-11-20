@@ -20,7 +20,7 @@ For statically allocated arrays (arrays whose size is known at compile time), it
 ```cpp
 int    array[] = { 1, 2, 3, 4 };
 
-for (size_t i = 0; i < sizeof(array) / sizeof(array[0]); i++)
+for (std::size_t i = 0; i < sizeof(array) / sizeof(array[0]); i++)
 	std::cout << array[i] << std::endl;
 ```
 
@@ -31,7 +31,7 @@ for (size_t i = 0; i < sizeof(array) / sizeof(array[0]); i++)
 ```cpp
 int    array[] = { 1, 2, 3, 4 };
 
-for (size_t i = 0; i < std::size(array); i++)
+for (std::size_t i = 0; i < std::size(array); i++)
 	std::cout << array[i] << std::endl;
 ```
 
@@ -65,7 +65,7 @@ int    [x, y, z] = array;
 ---
 ## Iterating over an array
 
-Always, always, **always** use **unsigned** data types to iterate over your arrays. Preferably, use `size_t` as it is guaranteed to be the largest possible type, with no risk of overflow should your index be too big. In general, make sure:
+Always, always, **always** use **unsigned** data types to iterate over your arrays. Preferably, use `std::size_t` as it is guaranteed to be the largest possible type, with no risk of overflow should your index be too big. In general, make sure:
 
 1. Your index type does allow for any negative values
 2. Your index type does not risk any overflows
@@ -77,9 +77,9 @@ Always, always, **always** use **unsigned** data types to iterate over your arra
 ```cpp
 int    array[] = { 1, 2, 3, 4 };
 
-for (size_t i; i < std::size(array), i++)
+for (std::size_t i; i < std::size(array), i++)
 	std::cout << array[i] << std::endl;
 ```
 
 ---
-*related* [[Vector]] [[Basic Types]] [[Loops]]
+*related* [[Vector]] [[Basic Types]] [[Pointers]] [[Loops]]

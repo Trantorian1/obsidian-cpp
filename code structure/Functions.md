@@ -11,6 +11,45 @@ double    mult(double x, double y) {
 ```
 
 ---
+## Reference Parameters
+
+Reference parameters allow to pass a reference to a variable. If the variable is then mutated inside the function, these change will persist outside of the scope of the function.
+
+> ℹ️ Contrary to C pointers, variable references do not need to be dereferenced, and the variable can be passed directly without taking it's address in memory.
+
+*syntax:*
+```cpp
+void    update(int& n) {
+	n = 42;
+}
+
+int    main(void) {
+	int n = 12;
+
+	update(n);
+	std::cout << n << std::endl; // will display 42
+
+	return EXIT_SUCCESS;
+}
+```
+
+*using pointers:*
+```cpp
+void    update(int* n) {
+	*n = 42;
+}
+
+int    main(void) {
+	int n = 12;
+
+	update(&n);
+	std::cout << n << std::endl; // will display 42
+
+	return EXIT_SUCCESS;
+}
+```
+
+---
 ## Default Parameters
 
 Unlike C, C++ supports functions with default arguments. This means you can define a function with multiple arguments and call it with only the required arguments.
@@ -32,13 +71,13 @@ Arrays as function parameters introduce extra complexity. When passed as an argu
 
 *ex:*
 ```cpp
-void    put(int array[], size_t len) {
-	for (size_t i = 0; i < len; i++)
+void    put(int array[], std::size_t len) {
+	for (std::size_t i = 0; i < len; i++)
 		std::cout << array[i] << std::endl
 }
 ```
 
-> ⚠️ Always pass a size of type `size_t` as it is contractually guaranteed to be the largest possible type on the platform being used, thus insuring your index will fit, regardless of it's size. If you **for certain** know the range of your index lands within the bounds of a smaller type, you might use that instead. In general though, make sure your index type doesn't cause an overflow and **always use unsigned values**.
+> ⚠️ Always pass a size of type `std::size_t` as it is contractually guaranteed to be the largest possible type on the platform being used, thus insuring your index will fit, regardless of it's size. If you **for certain** know the range of your index lands within the bounds of a smaller type, you might use that instead. In general though, make sure your index type doesn't cause an overflow and **always use unsigned values**.
 
 ---
 ## Function Overloading
