@@ -9,9 +9,9 @@ This repository is mainly intended as a C++ tutorial with a fast takeoff for pro
 ## Sections
 *and recommended reading order*
 
-- Types: [[ℹ️ About Types]]
-- Control flow: [[ℹ️ About Control Flow]]
-- Code structure: [[ℹ️ About Code Structure]]
-- Streams: [[ℹ️ About Streams]]
+- Types: [[About Types]]
+- Control flow: [[About Control Flow]]
+- Code structure: [[About Code Structure]]
+- Streams: [[About Streams]]
 - Classes: [[ℹ️ About Classes]]
-- Containers: [[ℹ️ About Containers]]
+- Containers: [[About Containers]]
