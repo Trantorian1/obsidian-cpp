@@ -40,4 +40,4 @@ A C++ `std::string` is aware of it's length, automatically handles growing and s
 > ℹ️ `std::string` also provides the `to_string` function to convert any number to it's string representation by providing overloads for each number type.
 
 ---
-*related* [[Classes]] [[Operator Overloading]] [[Streams]]
+*related* [[Classes]] [[notes/classes/Operator Overloading]] [[Streams]]
