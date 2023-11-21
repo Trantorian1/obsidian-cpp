@@ -89,3 +89,6 @@ int    main(void) {
 	return (0);
 }
 ```
+
+---
+*related:* [[Structures]] [[Structures In Memory]] [[Operator Overloading]] [[Classes]]

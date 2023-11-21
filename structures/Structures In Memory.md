@@ -71,3 +71,6 @@ myStruct.age = 42;
 // age = 42
 auto [ x, y, name, age ] { myStruct };
 ```
+
+---
+*related:* [[Structures]] [[Structure Methods]] [[Classes]]
