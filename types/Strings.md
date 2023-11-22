@@ -12,9 +12,30 @@ A C++ `std::string` is aware of it's length, automatically handles growing and s
 
 ---
 
-## Converting Strings using Streams
+## Manipulating Strings using Streams
 
-🚧 **UNDER CONSTRUCTION** 🚧
+String can also be easily manipulated using `std::stringstream` to benefit from the formatting capabilities of C++ streams.
+
+> ℹ️ There are 3 types of string streams:
+> 
+> - `std::istringstream` for string input
+> - `std::ostringstream` for string output
+> - `std::stringstream` for string input & output
+
+*ex:*
+```cpp
+std::istringstream stream;
+std::string str;
+
+// saving data to string stream
+stream << setw(20) << "Column1" << setw(20) << "Column2\n"
+       << setw(20) << "data1" << setw(20) << "data2"
+
+// converting string stream to string
+str = stream.str();
+
+std::cout << str << std::endl;
+```
 
 ---
 
@@ -40,4 +61,4 @@ A C++ `std::string` is aware of it's length, automatically handles growing and s
 > ℹ️ `std::string` also provides the `to_string` function to convert any number to it's string representation by providing overloads for each number type.
 
 ---
-*related* [[Classes]] [[notes/classes/Operator Overloading]] [[Streams]]
+*related* [[Classes]] [[Operator Overloading]] [[Streams]]

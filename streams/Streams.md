@@ -1,8 +1,4 @@
-> 📚 **Streams** represent data flow from or to a data source/recipient. This can be for example: data that is read from a file, data that is written to a file, data from the contents of a string... And so on. 
-
-There are two main types of streams in C++: **input** and **output**.
-
----
+*There are two main types of streams in C++: **input** and **output**.*
 
 ## Writing to a Stream (output)
 
