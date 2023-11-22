@@ -183,6 +183,8 @@ There are 3 main types of constructors in C++:
 
 - **copy constructor**: creates a new class instance from an existing class instance. Should perform a deep-copy on any object member variables (this includes `std::string`, `std::vector`, arrays...).
 
+> ℹ️ The **default constructor** and **parametric constructor** are part of the [[Orthodox Canonical Class Form]].
+
 *person.hpp*
 ```cpp
 class Person {
@@ -224,6 +226,49 @@ Person::Person(Person& person):
 ```
 
 ---
+
+## Destructors
+
+> 📚 **Destructors** specify a custom way to destroy a class instance, performing any necessary steps, including freeing up any allocated memory.
+
+> ℹ️ A custom **destructor** is required by the [[Orthodox Canonical Class Form]].
+
+*person.hpp:*
+```cpp
+class Person {
+public:
+	std::string		name;
+
+	Person();
+	Person(std::string name, unsigned short age, unsigned short height);
+	Person(Person& person);
+	~Person();
+
+	unsigned short	getAge(void) const;
+	unsigned short	getHeight(void) const;
+	void			setAge(unsigned short age);
+	void			setHeight(unsigned short height);
+
+	void			impersonate(Person& other);
+
+private:
+	unsigned short	_age;
+	unsigned short	_height;
+};
+```
+
+*person.cpp:*
+```cpp
+// =============================[ DESTRUCTOR ]=============================== //
+
+Person::~Person() {
+	// custom destruction code goes here
+}
+```
+
+---
+*related:* [[Inheritance]] [[Operator Overloading]] [[Orthodox Canonical Class Form]]
+
 
 
 
