@@ -12,6 +12,6 @@ OOP and inheritance has often been presented as a convenient way to model progra
 This means you should use classes and inheritance to **model the data** you are working as best befits your problem. Do not go down the traditional OOP rabbit hole of modelling your *problem* in terms of real-world counterparts. 
 
 *ex:*
-	You do not need a class Worker, from which inherits Manager, and `SimpleEmployee`, from which inherits `InternEmployee`, `FulltimeEmployee` and `PartTimeEmployee`. Instead, create a class `EmployeeData` which contains a bit mask of employee permission and ranks, pack that into a `vector` for better cache locality and add functions to operate on `EmployeeData`.
+	You do not need a class Worker, from which inherits `Manager`, and `SimpleEmployee`, from which inherits `InternEmployee`, `FulltimeEmployee` and `PartTimeEmployee`. Instead, create a class `EmployeeData` which contains a bit mask of employee permission and ranks, pack that into a `vector` for better cache locality and add functions to operate on `EmployeeData`. You will get better performance, a simpler codebase and a flat inheritance tree.
 
 For more about the usage of OOP and inheritance in C++, you can refer to Mike Acton's legendary CppCon 2014 presentation on Data Oriented Design in C++ [here](https://yewtu.be/watch?v=rX0ItVEVjHc)
