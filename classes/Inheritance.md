@@ -19,6 +19,7 @@ Following this principles, you will get better performance, a simpler codebase a
 
 For more about the usage of OOP and inheritance in C++, you can refer to Mike Acton's legendary CppCon 2014 presentation on Data Oriented Design in C++ [here](https://yewtu.be/watch?v=rX0ItVEVjHc)
 
+---
 ## Inheritance Qualifiers
 
 The basic syntax for inheriting a class in C++ is as follows:
