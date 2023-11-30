@@ -161,12 +161,12 @@ file.close()
 
 *syntax:*
 ```cpp
-Object    operator+(const Object& other);
+Object    operator+(const Object& other) const;
 ```
 
 *ex:*
 ```cpp
-Object    Object::operator+(const Object& other) {
+Object    Object::operator+(const Object& other) const {
 	return (Object(Object::attribute + other.attribute));
 }
 ```
